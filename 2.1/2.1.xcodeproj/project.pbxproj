@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FEA3EEF221EB379700328BD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3EEF121EB379700328BD9 /* AppDelegate.m */; };
-		FEA3EEF521EB379700328BD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3EEF421EB379700328BD9 /* ViewController.m */; };
 		FEA3EEF821EB379700328BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA3EEF621EB379700328BD9 /* Main.storyboard */; };
 		FEA3EEFA21EB379800328BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA3EEF921EB379800328BD9 /* Assets.xcassets */; };
 		FEA3EEFD21EB379800328BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA3EEFB21EB379800328BD9 /* LaunchScreen.storyboard */; };
 		FEA3EF0021EB379800328BD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3EEFF21EB379800328BD9 /* main.m */; };
+		FEA3EF0821EB3A7700328BD9 /* CurrentLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3EF0721EB3A7700328BD9 /* CurrentLocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEA3EEED21EB379700328BD9 /* 2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA3EEF021EB379700328BD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEA3EEF121EB379700328BD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FEA3EEF321EB379700328BD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FEA3EEF421EB379700328BD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FEA3EEF721EB379700328BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEA3EEF921EB379800328BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA3EEFC21EB379800328BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEA3EEFE21EB379800328BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEA3EEFF21EB379800328BD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEA3EF0621EB3A7700328BD9 /* CurrentLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentLocationViewController.h; sourceTree = "<group>"; };
+		FEA3EF0721EB3A7700328BD9 /* CurrentLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +60,13 @@
 			children = (
 				FEA3EEF021EB379700328BD9 /* AppDelegate.h */,
 				FEA3EEF121EB379700328BD9 /* AppDelegate.m */,
-				FEA3EEF321EB379700328BD9 /* ViewController.h */,
-				FEA3EEF421EB379700328BD9 /* ViewController.m */,
 				FEA3EEF621EB379700328BD9 /* Main.storyboard */,
 				FEA3EEF921EB379800328BD9 /* Assets.xcassets */,
 				FEA3EEFB21EB379800328BD9 /* LaunchScreen.storyboard */,
 				FEA3EEFE21EB379800328BD9 /* Info.plist */,
 				FEA3EEFF21EB379800328BD9 /* main.m */,
+				FEA3EF0621EB3A7700328BD9 /* CurrentLocationViewController.h */,
+				FEA3EF0721EB3A7700328BD9 /* CurrentLocationViewController.m */,
 			);
 			path = 2.1;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA3EEF521EB379700328BD9 /* ViewController.m in Sources */,
+				FEA3EF0821EB3A7700328BD9 /* CurrentLocationViewController.m in Sources */,
 				FEA3EF0021EB379800328BD9 /* main.m in Sources */,
 				FEA3EEF221EB379700328BD9 /* AppDelegate.m in Sources */,
 			);
