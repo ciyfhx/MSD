@@ -90,5 +90,12 @@
     }];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ResultTableViewController *destination =
+    [segue destinationViewController];
+    
+    destination.mapItems = _matchingItems;
+}
 
 @end
