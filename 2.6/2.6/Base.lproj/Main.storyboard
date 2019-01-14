@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="46A-nV-lc1">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FvU-bZ-8G4"/>
+                                </connections>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wgx-3E-zQS">
+                                <rect key="frame" x="0.0" y="85" width="375" height="517"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="517" id="CDi-Sf-xcR"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSc-in-oTf">
+                                <rect key="frame" x="19" y="617" width="40" height="30"/>
+                                <state key="normal" title="Zoom"/>
+                                <connections>
+                                    <action selector="zoomIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Gw-hL-frZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHj-EE-cXX">
+                                <rect key="frame" x="83" y="617" width="34" height="30"/>
+                                <state key="normal" title="Type"/>
+                                <connections>
+                                    <action selector="changeMapType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pvb-lj-HG1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LSc-in-oTf" firstAttribute="baseline" secondItem="SHj-EE-cXX" secondAttribute="baseline" id="2IF-y2-3AL"/>
+                            <constraint firstItem="wgx-3E-zQS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6z1-gN-duT"/>
+                            <constraint firstItem="46A-nV-lc1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="KU2-AE-TtB"/>
+                            <constraint firstItem="wgx-3E-zQS" firstAttribute="top" secondItem="46A-nV-lc1" secondAttribute="bottom" constant="19" id="YN7-8N-fqa"/>
+                            <constraint firstItem="SHj-EE-cXX" firstAttribute="leading" secondItem="LSc-in-oTf" secondAttribute="trailing" constant="24" id="e2c-dr-W97"/>
+                            <constraint firstItem="LSc-in-oTf" firstAttribute="top" secondItem="wgx-3E-zQS" secondAttribute="bottom" constant="15" id="i6S-4f-OQ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="46A-nV-lc1" secondAttribute="trailing" constant="16" id="igA-SG-Y8f"/>
+                            <constraint firstItem="46A-nV-lc1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jaZ-Nn-9rg"/>
+                            <constraint firstItem="wgx-3E-zQS" firstAttribute="centerX" secondItem="46A-nV-lc1" secondAttribute="centerX" id="vTv-ou-ITx"/>
+                            <constraint firstItem="LSc-in-oTf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="ynb-oD-lqx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="wgx-3E-zQS" id="Ojr-9a-lA6"/>
+                        <outlet property="searchText" destination="46A-nV-lc1" id="5p4-ko-6V0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
