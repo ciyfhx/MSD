@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JHD-Ty-cUy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="HDZ-H0-YQU">
+            <objects>
+                <viewController id="JHD-Ty-cUy" customClass="MapController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pU-Wc-V0K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9zb-ar-AvE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSg-vI-w6e" customClass="CircleButton">
+                                <rect key="frame" x="289" y="584" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.49642201400000002" blue="0.12913744720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Type">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeType:" destination="JHD-Ty-cUy" eventType="touchUpInside" id="LG0-z8-42c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="40w-Yc-EyQ" firstAttribute="bottom" secondItem="dSg-vI-w6e" secondAttribute="bottom" constant="13" id="8xY-0z-2rT"/>
+                            <constraint firstAttribute="trailing" secondItem="9zb-ar-AvE" secondAttribute="trailing" id="C42-0B-fzZ"/>
+                            <constraint firstItem="dSg-vI-w6e" firstAttribute="top" secondItem="40w-Yc-EyQ" secondAttribute="top" constant="564" id="CKX-iU-2qa"/>
+                            <constraint firstItem="9zb-ar-AvE" firstAttribute="leading" secondItem="8pU-Wc-V0K" secondAttribute="leading" id="WMp-vL-8db"/>
+                            <constraint firstItem="9zb-ar-AvE" firstAttribute="top" secondItem="8pU-Wc-V0K" secondAttribute="top" id="qI2-Vo-Vbb"/>
+                            <constraint firstItem="dSg-vI-w6e" firstAttribute="trailing" secondItem="8pU-Wc-V0K" secondAttribute="trailingMargin" id="vhC-BK-FJr"/>
+                            <constraint firstItem="dSg-vI-w6e" firstAttribute="leading" secondItem="40w-Yc-EyQ" secondAttribute="leading" constant="289" id="vp2-DR-aiW"/>
+                            <constraint firstItem="9zb-ar-AvE" firstAttribute="bottom" secondItem="40w-Yc-EyQ" secondAttribute="bottom" id="z4x-3S-LJK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="40w-Yc-EyQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="MlP-Yc-mQ6"/>
+                    <connections>
+                        <outlet property="map" destination="9zb-ar-AvE" id="NdN-pc-hwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1s-8t-mEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+</document>
