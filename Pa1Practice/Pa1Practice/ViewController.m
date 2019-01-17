@@ -48,7 +48,7 @@
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
-    [curloc stopUpdatingLocation];
+     [curloc stopUpdatingLocation];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
