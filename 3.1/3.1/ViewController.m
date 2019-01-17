@@ -10,6 +10,7 @@
 
 
 @interface ViewController ()
+- (IBAction)handleTap:(id)sender;
 
 @end
 
@@ -17,14 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-    tapGestureRecognizer.numberOfTapsRequired = 1;
-    tapGestureRecognizer.numberOfTouchesRequired = 1;
-
-    tapGestureRecognizer.delegate = self;
-    [self.view addGestureRecognizer:tapGestureRecognizer];
-
 
 }
 
@@ -34,7 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)handleTap:(UITapGestureRecognizer *)sender {
+- (IBAction)handleTap:(UITapGestureRecognizer *)sender {
     for (uint i = 0; i < sender.numberOfTouches; ++i) {
         CGPoint touchPoint = [sender locationOfTouch:i inView:sender.view];
         NSLog(@"Finger %d position is %@", (i=1), NSStringFromCGPoint(touchPoint));
