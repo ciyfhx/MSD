@@ -73,7 +73,7 @@
 
     if(event.subtype == UIEventSubtypeMotionShake)
     {
-        NSLog(@"Shaking...");
+        _statusLabel.text = @"Shake";
     }
 }
 
