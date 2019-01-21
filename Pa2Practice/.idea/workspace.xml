@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4267c0e6-2c57-452e-b5a2-3747e3a8c667" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f0bf849c-3ff2-4ce0-b34a-c26f6d92f4a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3.6/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3.6/ViewController.m">
+        <entry file="file://$PROJECT_DIR$/Pa2Practice/ViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="490">
+              <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -30,13 +31,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/3.6/ViewController.m" />
+        <option value="$PROJECT_DIR$/Pa2Practice/ViewController.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="y" value="34" />
+    <option name="x" value="137" />
+    <option name="y" value="22" />
     <option name="width" value="1400" />
     <option name="height" value="938" />
   </component>
@@ -46,24 +47,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="3.6" type="1d218c8b:XcodeProjectNode" />
+              <item name="Pa2Practice" type="1d218c8b:XcodeProjectNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="3.6" type="1d218c8b:XcodeProjectNode" />
-              <item name="3.6" type="fcab9f18:XcodeViewNode" />
+              <item name="Pa2Practice" type="1d218c8b:XcodeProjectNode" />
+              <item name="Pa2Practice" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -84,7 +85,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="3.6" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="3.6" TARGET_NAME="3.6" CONFIG_NAME="Debug" SCHEME_NAME="3.6" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="3.6" RUN_TARGET_NAME="3.6" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+    <configuration name="Pa2Practice" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pa2Practice" TARGET_NAME="Pa2Practice" CONFIG_NAME="Debug" SCHEME_NAME="Pa2Practice" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="Pa2Practice" RUN_TARGET_NAME="Pa2Practice" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -99,20 +100,21 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4267c0e6-2c57-452e-b5a2-3747e3a8c667" name="Default Changelist" comment="" />
-      <created>1547691632926</created>
+      <changelist id="f0bf849c-3ff2-4ce0-b34a-c26f6d92f4a3" name="Default Changelist" comment="" />
+      <created>1548037542434</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1547691632926</updated>
-      <workItem from="1547691634381" duration="580000" />
+      <updated>1548037542434</updated>
+      <workItem from="1548037569879" duration="1314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="580000" />
+    <option name="totallyTimeSpent" value="1314000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="34" width="1400" height="938" extended-state="0" />
+    <frame x="137" y="22" width="1400" height="938" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
@@ -125,7 +127,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -141,10 +143,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/3.6/ViewController.m">
+    <entry file="file://$PROJECT_DIR$/Pa2Practice/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="490">
+          <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
         </state>
       </provider>
     </entry>
