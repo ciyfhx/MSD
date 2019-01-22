@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abt-Qg-ozZ">
+                                <rect key="frame" x="188" y="163" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zv-kL-iW8">
+                                <rect key="frame" x="170" y="326" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIb-D3-8OM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Abt-Qg-ozZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D0o-hw-DlH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Zv-kL-iW8" secondAttribute="bottom" constant="311" id="UTx-aH-SMw"/>
+                            <constraint firstItem="Abt-Qg-ozZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="143" id="WWB-Hd-DDl"/>
+                            <constraint firstItem="4Zv-kL-iW8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZl-Fq-WUe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DqG-8f-scY" appends="YES" id="NSY-kK-Vxi"/>
+                            <outletCollection property="gestureRecognizers" destination="Lte-2U-SB4" appends="YES" id="laJ-vo-jKM"/>
+                            <outletCollection property="gestureRecognizers" destination="pVG-ZJ-wZ4" appends="YES" id="64h-ZE-pIR"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="lbltext" destination="Abt-Qg-ozZ" id="fCQ-jl-NCc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="DqG-8f-scY">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="JmR-vI-wtR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Lte-2U-SB4">
+                    <connections>
+                        <action selector="handleSwipe:" destination="BYZ-38-t0r" id="ZE8-tR-gA9"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="pVG-ZJ-wZ4">
+                    <connections>
+                        <action selector="handleSwipe:" destination="BYZ-38-t0r" id="5lk-2l-bHS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
