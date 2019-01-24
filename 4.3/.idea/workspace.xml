@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e65bc536-b4ec-495f-87cf-e19a69586436" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../4.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../4.2/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e65bc536-b4ec-495f-87cf-e19a69586436" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +81,9 @@
       </method>
     </configuration>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e65bc536-b4ec-495f-87cf-e19a69586436" name="Default Changelist" comment="" />
@@ -90,12 +91,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548294848404</updated>
-      <workItem from="1548294850213" duration="246000" />
+      <workItem from="1548294850213" duration="459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246000" />
+    <option name="totallyTimeSpent" value="459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="65" width="1400" height="938" extended-state="0" />
