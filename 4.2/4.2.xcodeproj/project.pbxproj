@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FD1C0ABA8D70FB178A2FD66 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD1C06BE7FED70347DFD325 /* libz.1.dylib */; };
+		6FD1C1559A836AD15EAB6991 /* contacts.db in Resources */ = {isa = PBXBuildFile; fileRef = 6FD1CB37434270A1A7723091 /* contacts.db */; };
 		6FD1C54668E0163F9833ADC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1C813DB0AB6D9AF7C6205 /* ViewController.m */; };
 		6FD1C87DC25A1F350ABCE0EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD1C2234E0CFD6F492BC472 /* LaunchScreen.storyboard */; };
+		6FD1CA8D8A8364B6F7717785 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD1CB44DC6289554D835A07 /* libsqlite3.0.dylib */; };
 		6FD1CAEABBA42AEF20884E66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1C58515DD53981C562186 /* main.m */; };
 		6FD1CDE45854CE6B45FD5163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD1CEB03060043A29E6D2BC /* Main.storyboard */; };
 		6FD1CE335034EC1238766EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD1C205F1CA5CF65FF7F78E /* Assets.xcassets */; };
@@ -16,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6FD1C06BE7FED70347DFD325 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
 		6FD1C205F1CA5CF65FF7F78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD1C297702993FD58F8C23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FD1C2F616EE185015A4BBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -25,6 +29,8 @@
 		6FD1C58515DD53981C562186 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FD1C813DB0AB6D9AF7C6205 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6FD1C91B4CA379312890FC1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6FD1CB37434270A1A7723091 /* contacts.db */ = {isa = PBXFileReference; lastKnownFileType = file.db; path = contacts.db; sourceTree = "<group>"; };
+		6FD1CB44DC6289554D835A07 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = /usr/lib/libsqlite3.0.dylib; sourceTree = "<absolute>"; };
 		6FD1CBBCCDBD1617F0404BD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD1C0ABA8D70FB178A2FD66 /* libz.1.dylib in Frameworks */,
+				6FD1CA8D8A8364B6F7717785 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,7 @@
 				6FD1CEB03060043A29E6D2BC /* Main.storyboard */,
 				6FD1C57BDD412BDFC68A21F9 /* ViewController.h */,
 				6FD1C813DB0AB6D9AF7C6205 /* ViewController.m */,
+				6FD1CB37434270A1A7723091 /* contacts.db */,
 			);
 			path = 4.2;
 			sourceTree = "<group>";
@@ -68,7 +77,17 @@
 			children = (
 				6FD1C05B98C9652EC351CFB2 /* Products */,
 				6FD1C1C7FE77A8B2156D2F72 /* 4.2 */,
+				6FD1CBACB2587E3A55C86CCB /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		6FD1CBACB2587E3A55C86CCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FD1C06BE7FED70347DFD325 /* libz.1.dylib */,
+				6FD1CB44DC6289554D835A07 /* libsqlite3.0.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +143,7 @@
 				6FD1CE335034EC1238766EC5 /* Assets.xcassets in Resources */,
 				6FD1C87DC25A1F350ABCE0EC /* LaunchScreen.storyboard in Resources */,
 				6FD1CDE45854CE6B45FD5163 /* Main.storyboard in Resources */,
+				6FD1C1559A836AD15EAB6991 /* contacts.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +238,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/../../../../../System/Library/Tcl/sqlite3\"/**",
+					"\"${PROJECT_DIR}/../../../../../usr/lib\"/**",
+					"\"${PROJECT_DIR}/../../../../../usr/lib\"/**",
+				);
 				INFOPLIST_FILE = 4.2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ziheng.4-2";
@@ -288,6 +313,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/../../../../../System/Library/Tcl/sqlite3\"/**",
+					"\"${PROJECT_DIR}/../../../../../usr/lib\"/**",
+					"\"${PROJECT_DIR}/../../../../../usr/lib\"/**",
+				);
 				INFOPLIST_FILE = 4.2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ziheng.4-2";
