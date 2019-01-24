@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Person+CoreDataClass.h"
+#import "Person+CoreDataProperties.h"
 
 @interface AppDelegate ()
 
@@ -109,10 +110,9 @@
         return NO;
     }
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
-    NSManagedObjectModel *managedObjectModel = [[context persistentStoreCoordinator] managedObjectModel];
-    NSEntityDescription *entity = [[managedObjectModel entitiesByName] objectForKey:@"Person"];
-
-    NSManagedObject* newPerson = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
+    Person *newPerson =  [NSEntityDescription
+                       insertNewObjectForEntityForName:@"Person"
+                       inManagedObjectContext:context];
 
     if(newPerson == nil)
     {
@@ -162,19 +162,19 @@
         // Go thru the persons array one by one
         NSUInteger counter = 1;
 
-        for(NSManagedObject *thisPerson in persons)
+        for(Person *thisPerson in persons)
         {
             NSLog(@"Person %lu First Name = %@",
                     (unsigned long)counter,
-                    [thisPerson valueForKey:@"firstName"]);
+                    thisPerson.firstName);
 
             NSLog(@"Person %lu Last Name = %@",
                     (unsigned long)counter,
-                    [thisPerson valueForKey:@"lastName"]);
+                    thisPerson.lastName);
 
             NSLog(@"Person %lu Age = %ld",
                     (unsigned long)counter,
-                    (unsigned long)[[thisPerson valueForKey:@"age"] unsignedIntegerValue]);
+                    (unsigned long)thisPerson.age);
 
             counter++;
         }
