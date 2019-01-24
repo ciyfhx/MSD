@@ -30,7 +30,7 @@
 
     NSFileManager* fileManager = [NSFileManager defaultManager];
 
-    if([fileManager fileExistsAtPath:_databasePath] == YES) {
+    if([fileManager fileExistsAtPath:_databasePath] == NO) {
         const char* dbpath = [_databasePath UTF8String];
 
         if(sqlite3_open(dbpath, &_contactDB) == SQLITE_OK) {
