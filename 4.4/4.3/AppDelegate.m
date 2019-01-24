@@ -109,8 +109,8 @@
         return NO;
     }
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
-    NSEntityDescription *entity = [NSEntityDescription
-            entityForName:@"Person" inManagedObjectContext:context];
+    NSManagedObjectModel *managedObjectModel = [[context persistentStoreCoordinator] managedObjectModel];
+    NSEntityDescription *entity = [[managedObjectModel entitiesByName] objectForKey:@"Person"];
 
     NSManagedObject* newPerson = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
 
@@ -122,7 +122,7 @@
 
     [newPerson setValue:paramFirstName forKey:@"firstName"];
     [newPerson setValue:paramLastName forKey:@"lastName"];
-    [newPerson setValue:[NSNumber numberWithUnsignedInt:paramAge] forKey:@"age"];
+    [newPerson setValue:[NSNumber numberWithUnsignedLong:paramAge] forKey:@"age"];
 
     NSError *savingError = nil;
 
