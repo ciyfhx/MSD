@@ -81,7 +81,7 @@
     newEmployee.empName = empName;
     newEmployee.empID = empID;
     newEmployee.empDept = empDept;
-    newEmployee.empSalary = (short)empSalary;
+    newEmployee.empSalary = (int)empSalary;
     
     NSError* error = nil;
     
