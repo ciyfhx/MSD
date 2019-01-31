@@ -123,13 +123,13 @@
                         
                         if(!tracksWithFirstLetter){
                             tracksWithFirstLetter = [NSMutableArray array];
-                            [self.firstLettersArray addObject:tracksWithFirstLetter];
+                            [self.firstLettersArray addObject:trackFirstLetter];
                         }
                         
                         [tracksWithFirstLetter addObject:track];
                         [tracksWithFirstLetter sortUsingSelector:@selector(compare:)];
                         
-                        [self.tracksDictionary setObject:track forKey:trackFirstLetter];
+                        [self.tracksDictionary setObject:tracksWithFirstLetter forKey:trackFirstLetter];
                     }
                     [self.firstLettersArray sortUsingSelector:@selector(compare:)];
                     [self.tableView reloadData];
