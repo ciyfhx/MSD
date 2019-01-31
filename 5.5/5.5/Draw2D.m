@@ -32,15 +32,16 @@
     CGContextFillEllipseInRect(context, eye2);
     
     
-    //Draw triangle
+    //Draw Nose
     static int size = 50;
     [self drawTriangle:context withX:(width/2) - (size/2) withY:height*.3 withSize:size];
     
     //Draw Mouth
     int mouthHeight = height * 0.45;
     int mouthPadding = 30;
+    int smileRadius = 200;
     CGContextMoveToPoint(context, mouthPadding, mouthHeight);
-    CGContextAddQuadCurveToPoint(context, width/2, mouthHeight+200, width - mouthPadding, mouthHeight);
+    CGContextAddQuadCurveToPoint(context, width/2, mouthHeight+smileRadius, width - mouthPadding, mouthHeight);
     
     
     CGContextStrokePath(context);
