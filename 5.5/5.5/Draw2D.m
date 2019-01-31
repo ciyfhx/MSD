@@ -23,7 +23,7 @@
     
     //Draw eye
     int eyeSize = 65;
-    int eyeOffsetPadding = 40;
+    int eyeOffsetPadding = 90;
     int eyeTopOffsetPadding = 40;
     CGRect eye1 = CGRectMake(eyeOffsetPadding, eyeOffsetPadding + eyeTopOffsetPadding, eyeSize, eyeSize);
     CGRect eye2 = CGRectMake(width - eyeOffsetPadding - eyeSize, eyeOffsetPadding + eyeTopOffsetPadding, eyeSize, eyeSize);
@@ -34,12 +34,13 @@
     
     //Draw Nose
     static int size = 50;
-    [self drawTriangle:context withX:(width/2) - (size/2) withY:height*.3 withSize:size];
+    int noseHeight = height*.4;
+    [self drawTriangle:context withX:(width/2) - (size/2) withY:noseHeight withSize:size];
     
     //Draw Mouth
-    int mouthHeight = height * 0.45;
+    int mouthHeight = height * 0.55;
     int mouthPadding = 30;
-    int smileRadius = 200;
+    int smileRadius = 150;
     CGContextMoveToPoint(context, mouthPadding, mouthHeight);
     CGContextAddQuadCurveToPoint(context, width/2, mouthHeight+smileRadius, width - mouthPadding, mouthHeight);
     
