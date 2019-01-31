@@ -41,6 +41,7 @@
 //    CGContextStrokePath(context);
 
     
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
 
     CGContextSetLineWidth(context, 2.0);
