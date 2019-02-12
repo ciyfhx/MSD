@@ -65,7 +65,7 @@
                     <navigationItem key="navigationItem" id="4Lv-KZ-a1F">
                         <barButtonItem key="rightBarButtonItem" title="Info" id="e4H-Cu-qNt">
                             <connections>
-                                <segue destination="qdK-y1-44A" kind="show" action="showDetailViewController:sender:" id="ceJ-Mx-W1U"/>
+                                <segue destination="qdK-y1-44A" kind="show" identifier="" id="jJ5-cT-kcX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
